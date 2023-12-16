@@ -6,6 +6,6 @@ namespace CQRS.Core.Handlers
     {
         Task SaveAsync(AggregateRoot aggregate);
 
-        Task<T> GetByIdAsync(Guid id);
+        Task<T> GetByIdAsync(Guid aggregateId);
     }
 }
